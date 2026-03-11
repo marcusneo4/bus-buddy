@@ -1,0 +1,19 @@
+{
+  "name": "bus-buddy",
+  "version": "1.0.0",
+  "description": "A high-visibility, \"calm technology\" dashboard for Singaporean commuters. Translates raw LTA bus arrival data into actionable instructions: **Stay ☕**, **Leave 🏃**, or **Gone 💨**.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --names \"backend,frontend\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "build": "npm run build --prefix backend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@vercel/node": "^3.2.0",
+    "concurrently": "^9.2.1"
+  }
+}

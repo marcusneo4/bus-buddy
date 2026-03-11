@@ -1,0 +1,105 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" xml:base="http://datamall2.mytransport.sg/ltaodataservice">
+    <id>http://schemas.datacontract.org/2004/07/</id>
+    <title />
+    <link rel="self" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBandsv2" />
+    <entry>
+        <id>http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBandSet()</id>
+        <category term="DataMall2.Models.TrafficSpeedBands" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <link rel="self" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <title />
+        <updated>2023-4-4T7:17:14Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:LinkID>103000000</d:LinkID>
+                <d:RoadName>KENT ROAD</d:RoadName>
+                <d:RoadCategory>E</d:RoadCategory>
+                <d:SpeedBand>3</d:SpeedBand>
+                <d:MinimumSpeed>20</d:MinimumSpeed>
+                <d:MaximumSpeed>29</d:MaximumSpeed>
+                <d:StartLon>103.85298052044503</d:StartLon>
+                <d:StartLat>1.3170142376560023</d:StartLat>
+                <d:EndLon>103.85259882242372</d:EndLon>
+                <d:EndLat>1.3166840028663076</d:EndLat>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBandSet()</id>
+        <category term="DataMall2.Models.TrafficSpeedBands" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <link rel="self" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <title />
+        <updated>2023-4-4T7:17:14Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:LinkID>103000010</d:LinkID>
+                <d:RoadName>BUCKLEY ROAD</d:RoadName>
+                <d:RoadCategory>E</d:RoadCategory>
+                <d:SpeedBand>3</d:SpeedBand>
+                <d:MinimumSpeed>20</d:MinimumSpeed>
+                <d:MaximumSpeed>29</d:MaximumSpeed>
+                <d:StartLon>103.84102305136321</d:StartLon>
+                <d:StartLat>1.3166507852203482</d:StartLat>
+                <d:EndLon>103.84022564204443</d:EndLon>
+                <d:EndLat>1.316912438354752</d:EndLat>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBandSet()</id>
+        <category term="DataMall2.Models.TrafficSpeedBands" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <link rel="self" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <title />
+        <updated>2023-4-4T7:17:14Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:LinkID>103000011</d:LinkID>
+                <d:RoadName>BUCKLEY ROAD</d:RoadName>
+                <d:RoadCategory>E</d:RoadCategory>
+                <d:SpeedBand>3</d:SpeedBand>
+                <d:MinimumSpeed>20</d:MinimumSpeed>
+                <d:MaximumSpeed>29</d:MaximumSpeed>
+                <d:StartLon>103.84022564204443</d:StartLon>
+                <d:StartLat>1.316912438354752</d:StartLat>
+                <d:EndLon>103.84102305136321</d:EndLon>
+                <d:EndLat>1.3166507852203482</d:EndLat>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBandSet()</id>
+        <category term="DataMall2.Models.TrafficSpeedBands" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <link rel="self" href="http://datamall2.mytransport.sg/ltaodataservice/TrafficSpeedBands()" />
+        <title />
+        <updated>2023-4-4T7:17:14Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:LinkID>103000014</d:LinkID>
+                <d:RoadName>SHREWSBURY ROAD</d:RoadName>
+                <d:RoadCategory>E</d:RoadCategory>
+                <d:SpeedBand>5</d:SpeedBand>
+                <d:MinimumSpeed>40</d:MinimumSpeed>
+                <d:MaximumSpeed>49</d:MaximumSpeed>
+                <d:StartLon>103.84700267615683</d:StartLon>
+                <d:StartLat>1.3186726294030418</d:StartLat>
+                <d:EndLon>103.84711392225329</d:EndLon>
+                <d:EndLat>1.3180212058893457</d:EndLat>
+            </m:properties>
+        </content>
+    </entry>
+</feed>

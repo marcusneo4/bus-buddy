@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ── Design tokens: 60-30-10, no pure black/white, premium contrast ── */
+:root {
+  /* Base (60%): tinted darks */
+  --color-bg-base: #0f1419;
+  --color-bg-base-alt: #1a1f26;
+  /* Surface (30%): cards, bars */
+  --color-bg-surface: #1e252d;
+  --color-bg-surface-elevated: #252d37;
+  --color-border-subtle: #2d3640;
+  --color-border-muted: #3d4854;
+  /* Accent (10%): CTAs, active states */
+  --color-accent: #f59e0b;
+  --color-accent-muted: #d97706;
+  --color-accent-soft: rgba(245, 158, 11, 0.15);
+  /* Text: off-whites, never #fff */
+  --color-text-primary: #f4f4f3;
+  --color-text-secondary: #a8b2bd;
+  --color-text-muted: #6b7682;
+  /* Easing: no linear for UI */
+  --ease-out-snappy: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-soft: cubic-bezier(0.33, 1, 0.6, 1);
+  /* Multi-layer shadows for depth */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.14);
+  --shadow-floating: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -4px rgba(0, 0, 0, 0.18);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@layer utilities {
+  @keyframes dashboard-card-enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dashboard-card-enter {
+    animation: dashboard-card-enter 0.4s var(--ease-out-soft) forwards;
+  }
+
+  .skeleton {
+    @apply rounded bg-[var(--color-bg-surface-elevated)];
+    animation: skeleton-pulse 1.5s var(--ease-out-snappy) infinite;
+  }
+
+  @keyframes skeleton-pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+
+  .touch-manipulation {
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+
+  /* Min 44px touch target (in addition to visible size) */
+  .touch-target {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .status-stay {
+    border: 1px solid var(--color-border-subtle);
+    background-color: var(--color-bg-surface);
+    color: var(--color-text-secondary);
+  }
+
+  .status-leave {
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent);
+  }
+
+  .status-gone {
+    border: 1px solid var(--color-border-subtle);
+    background-color: var(--color-bg-base-alt);
+    color: var(--color-text-muted);
+  }
+
+  @keyframes radar-run-flash {
+    0% { background-color: #2a0a0c; }
+    50% { background-color: #4a1218; }
+    100% { background-color: #2a0a0c; }
+  }
+
+  .radar-run-flash {
+    animation: radar-run-flash 1s var(--ease-out-snappy) infinite;
+  }
+
+  /* Button tactile: hover scale + focus ring */
+  .btn-tactile {
+    transition: transform 0.2s var(--ease-out-snappy), color 0.2s var(--ease-out-snappy),
+      background-color 0.2s var(--ease-out-snappy), box-shadow 0.2s var(--ease-out-snappy);
+  }
+  .btn-tactile:hover {
+    transform: scale(1.02);
+  }
+  .btn-tactile:active {
+    transform: scale(0.98);
+  }
+  .btn-tactile:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg-base), 0 0 0 4px var(--color-accent);
+  }
+}

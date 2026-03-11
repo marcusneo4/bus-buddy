@@ -1,0 +1,66 @@
+{
+    "odata.metadata": "http://datamall2.mytransport.sg/ltaodataservice/$metadata#TrafficSpeedBands",
+    "lastUpdatedTime": "2023-04-04 10:15:00",
+    "value": [
+        {
+            "LinkID": "103000000",
+            "RoadName": "KENT ROAD",
+            "RoadCategory": "E",
+            "SpeedBand": 3,
+            "MinimumSpeed": "20",
+            "MaximumSpeed": "29",
+            "StartLon": "103.85298052044503",
+            "StartLat": "1.3170142376560023",
+            "EndLon": "103.85259882242372",
+            "EndLat": "1.3166840028663076"
+        },
+        {
+            "LinkID": "103000010",
+            "RoadName": "BUCKLEY ROAD",
+            "RoadCategory": "E",
+            "SpeedBand": 3,
+            "MinimumSpeed": "20",
+            "MaximumSpeed": "29",
+            "StartLon": "103.84102305136321",
+            "StartLat": "1.3166507852203482",
+            "EndLon": "103.84022564204443",
+            "EndLat": "1.316912438354752"
+        },
+        {
+            "LinkID": "103000011",
+            "RoadName": "BUCKLEY ROAD",
+            "RoadCategory": "E",
+            "SpeedBand": 3,
+            "MinimumSpeed": "20",
+            "MaximumSpeed": "29",
+            "StartLon": "103.84022564204443",
+            "StartLat": "1.316912438354752",
+            "EndLon": "103.84102305136321",
+            "EndLat": "1.3166507852203482"
+        },
+        {
+            "LinkID": "103000014",
+            "RoadName": "SHREWSBURY ROAD",
+            "RoadCategory": "E",
+            "SpeedBand": 6,
+            "MinimumSpeed": "50",
+            "MaximumSpeed": "59",
+            "StartLon": "103.84700267615683",
+            "StartLat": "1.3186726294030418",
+            "EndLon": "103.84711392225329",
+            "EndLat": "1.3180212058893457"
+        },
+        {
+            "LinkID": "103000015",
+            "RoadName": "SHREWSBURY ROAD",
+            "RoadCategory": "E",
+            "SpeedBand": 5,
+            "MinimumSpeed": "40",
+            "MaximumSpeed": "49",
+            "StartLon": "103.84711392225329",
+            "StartLat": "1.3180212058893457",
+            "EndLon": "103.84700267615683",
+            "EndLat": "1.3186726294030418"
+        }
+    ]
+}
